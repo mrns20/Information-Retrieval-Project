@@ -1,11 +1,11 @@
 # Information Retrieval Project — arXiv Academic Search Engine
 
-> 🇬🇧 [English](#english) | 🇬🇷 [Ελληνικά](#greek)
+> [English](#english) | [Ελληνικά](#greek)
 
 ---
 
 <a name="english"></a>
-## 🇬🇧 English
+## English
 
 ### Overview
 
@@ -13,22 +13,7 @@ This project implements a fully functional **Information Retrieval system** that
 
 ---
 
-### 📁 Repository Structure
-
-```
-Information-Retrieval-Project/
-│
-├── project_final_version.py           # Main Python script
-├── arxiv_results_raw.json             # Raw crawled data from arXiv
-├── arxiv_results_preprocessed.json    # Preprocessed version of the crawled data
-├── inverted_index.json                # Generated inverted index
-├── Report.pdf                         # Project report
-└── README.md
-```
-
----
-
-### ⚙️ How It Works
+###  Stages of the system  when it runs
 
 The system is organized into four main stages that run sequentially when the script is executed.
 
@@ -42,7 +27,7 @@ The system is organized into four main stages that run sequentially when the scr
 
 ---
 
-### 🔍 Retrieval Algorithms
+### Retrieval Algorithms
 
 The system supports three retrieval models, selectable from the GUI.
 
@@ -56,13 +41,13 @@ All three algorithms feed into a shared ranking step that uses TF-IDF cosine sim
 
 ---
 
-### 🖥️ User Interface
+### UI
 
 The Tkinter GUI presents the user with a text field for entering a query, radio buttons to select one of the three retrieval algorithms, and two optional checkboxes for filtering by publication date and author. The date and author input fields are disabled by default and only become active when their corresponding checkbox is selected. Results are printed to the console in a structured format showing title, authors, date, and abstract for each match.
 
 ---
 
-### 🛠️ Requirements
+### Requirements
 
 ```bash
 pip install requests beautifulsoup4 nltk scikit-learn
@@ -74,20 +59,20 @@ NLTK stopwords must also be downloaded, which the script handles automatically o
 
 ---
 
-### ▶️ How to Run
+###  How to Run
 
 Clone the repository and install the dependencies, then run the main script with `python project_final_version.py`. The script will automatically crawl arXiv, preprocess the results, build the inverted index, save all intermediate files as JSON, and open the search GUI. Make sure you have an active internet connection for the crawling step.
 
 ---
 
-### 📄 Output Files
+###  Output Files
 
 Running the script produces three JSON files: `arxiv_results_raw.json` contains the original crawled data, `arxiv_results_preprocessed.json` contains the text after preprocessing, and `inverted_index.json` contains the complete term-to-document-ID mapping used for retrieval.
 
 ---
 
 <a name="greek"></a>
-## 🇬🇷 Ελληνικά
+## Ελληνικά
 
 ### Επισκόπηση
 
@@ -95,22 +80,7 @@ Running the script produces three JSON files: `arxiv_results_raw.json` contains 
 
 ---
 
-### 📁 Δομή Αποθετηρίου
-
-```
-Information-Retrieval-Project/
-│
-├── project_final_version.py           # Κύριο αρχείο Python
-├── arxiv_results_raw.json             # Αρχικά δεδομένα από το arXiv
-├── arxiv_results_preprocessed.json    # Προεπεξεργασμένα δεδομένα
-├── inverted_index.json                # Ανεστραμμένο ευρετήριο
-├── Report.pdf                         # Αναφορά έργου
-└── README.md
-```
-
----
-
-### ⚙️ Λειτουργία Συστήματος
+### Λειτουργία Συστήματος
 
 Το σύστημα οργανώνεται σε τέσσερα κύρια στάδια που εκτελούνται διαδοχικά κατά την εκκίνηση του script.
 
@@ -124,7 +94,7 @@ Information-Retrieval-Project/
 
 ---
 
-### 🔍 Αλγόριθμοι Ανάκτησης
+###  Αλγόριθμοι Ανάκτησης
 
 Το σύστημα υποστηρίζει τρία μοντέλα ανάκτησης, επιλέξιμα από το GUI.
 
@@ -136,13 +106,13 @@ Information-Retrieval-Project/
 
 ---
 
-### 🖥️ Γραφική Διεπαφή Χρήστη
+###  Γραφική Διεπαφή
 
 Το GUI Tkinter παρουσιάζει στον χρήστη πεδίο κειμένου για εισαγωγή ερωτήματος, κουμπιά επιλογής για τον αλγόριθμο ανάκτησης και δύο προαιρετικά checkboxes για φιλτράρισμα βάσει ημερομηνίας και συγγραφέα. Τα πεδία εισαγωγής ημερομηνίας και συγγραφέα είναι αρχικά απενεργοποιημένα και ενεργοποιούνται μόνο όταν επιλεγεί το αντίστοιχο checkbox. Τα αποτελέσματα εκτυπώνονται στην κονσόλα με δομημένη μορφή που εμφανίζει τίτλο, συγγραφείς, ημερομηνία και περίληψη για κάθε αποτέλεσμα.
 
 ---
 
-### 🛠️ Απαιτήσεις
+### Απαιτήσεις
 
 ```bash
 pip install requests beautifulsoup4 nltk scikit-learn
@@ -154,7 +124,7 @@ pip install requests beautifulsoup4 nltk scikit-learn
 
 ---
 
-### ▶️ Εκτέλεση
+###  Εκτέλεση
 
 Κλωνοποιήστε το αποθετήριο, εγκαταστήστε τις εξαρτήσεις και εκτελέστε το κύριο script με `python project_final_version.py`. Το script θα ανακτήσει αυτόματα δεδομένα από το arXiv, θα πραγματοποιήσει προεπεξεργασία, θα κατασκευάσει το ανεστραμμένο ευρετήριο, θα αποθηκεύσει όλα τα ενδιάμεσα αρχεία ως JSON και θα ανοίξει το GUI αναζήτησης. Βεβαιωθείτε ότι υπάρχει ενεργή σύνδεση στο διαδίκτυο για το στάδιο crawling.
 
