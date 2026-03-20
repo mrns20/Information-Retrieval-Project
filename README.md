@@ -1,4 +1,4 @@
-# Information Retrieval Project — arXiv Academic Search Engine
+# Information Retrieval Project, an arXiv Academic Search Engine
 
 > [English](#english) | [Ελληνικά](#greek)
 
