@@ -31,7 +31,7 @@ The system is organized into four main stages that run sequentially when the scr
 
 The system supports three retrieval models, selectable from the GUI.
 
-**Boolean Retrieval** processes the query using set operations — intersection for `AND`, union for `OR`, and difference for `NOT` — to return documents that exactly match the logical conditions of the query.
+**Boolean Retrieval** processes the query using set operations , intersection for `AND`, union for `OR`, and difference for `NOT` , to return documents that exactly match the logical conditions of the query.
 
 **Vector Space Model (VSM)** represents both documents and the query as TF-IDF vectors and ranks results by computing the **cosine similarity** between the query vector and each document vector. Documents more similar to the query are ranked higher.
 
@@ -98,7 +98,7 @@ Running the script produces three JSON files: `arxiv_results_raw.json` contains 
 
 Το σύστημα υποστηρίζει τρία μοντέλα ανάκτησης, επιλέξιμα από το GUI.
 
-Η **Boolean Ανάκτηση** επεξεργάζεται το ερώτημα με πράξεις συνόλων — τομή για `AND`, ένωση για `OR` και διαφορά για `NOT` — επιστρέφοντας τα έγγραφα που ικανοποιούν ακριβώς τις λογικές συνθήκες του ερωτήματος.
+Η **Boolean Ανάκτηση** επεξεργάζεται το ερώτημα με πράξεις συνόλων , τομή για `AND`, ένωση για `OR` και διαφορά για `NOT` , επιστρέφοντας τα έγγραφα που ικανοποιούν ακριβώς τις λογικές συνθήκες του ερωτήματος.
 
 Το **Μοντέλο Διανυσματικού Χώρου (VSM)** αναπαριστά έγγραφα και ερώτημα ως διανύσματα TF-IDF και κατατάσσει τα αποτελέσματα υπολογίζοντας την **ομοιότητα συνημιτόνου** μεταξύ του διανύσματος ερωτήματος και κάθε εγγράφου. Τα έγγραφα με υψηλότερη ομοιότητα κατατάσσονται πρώτα.
 
