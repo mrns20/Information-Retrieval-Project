@@ -17,13 +17,13 @@ This project implements a fully functional **Information Retrieval system** that
 
 The system is organized into four main stages that run sequentially when the script is executed.
 
-**Stage 1 — Crawling.** The crawler fetches the latest computer science papers from `https://arxiv.org/list/cs/new` using `requests` and `BeautifulSoup`. For each paper it extracts the title, authors, abstract, and publication date, storing the first 150 results as a raw JSON file.
+**Stage 1 : Crawling.** The crawler fetches the latest computer science papers from `https://arxiv.org/list/cs/new` using `requests` and `BeautifulSoup`. For each paper it extracts the title, authors, abstract, and publication date, storing the first 150 results as a raw JSON file.
 
-**Stage 2 — Preprocessing.** Each paper's abstract is preprocessed through a pipeline that removes special characters, tokenizes the text, lowercases all tokens, applies **Porter Stemming** to reduce words to their root form, and removes both punctuation and English **stop words**. The preprocessed documents are saved to a second JSON file.
+**Stage 2 : Preprocessing.** Each paper's abstract is preprocessed through a pipeline that removes special characters, tokenizes the text, lowercases all tokens, applies **Porter Stemming** to reduce words to their root form, and removes both punctuation and English **stop words**. The preprocessed documents are saved to a second JSON file.
 
-**Stage 3 — Indexing.** An **inverted index** is built from the preprocessed abstracts. Each unique term is mapped to the set of document IDs in which it appears. The index is sorted alphabetically and saved as a JSON file for reference.
+**Stage 3 : Indexing.** An **inverted index** is built from the preprocessed abstracts. Each unique term is mapped to the set of document IDs in which it appears. The index is sorted alphabetically and saved as a JSON file for reference.
 
-**Stage 4 — Querying via GUI.** A Tkinter-based interface allows the user to enter a search query, choose a retrieval algorithm, and optionally filter results by publication date or author name. Boolean operators (`AND`, `OR`, `NOT`) are supported in queries.
+**Stage 4 : Querying via GUI.** A Tkinter-based interface allows the user to enter a search query, choose a retrieval algorithm, and optionally filter results by publication date or author name. Boolean operators (`AND`, `OR`, `NOT`) are supported in queries.
 
 ---
 
